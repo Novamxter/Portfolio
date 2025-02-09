@@ -709,7 +709,10 @@ main .edu-container section{
   max-width:300px;
   position:relative;
 }
-
+/*-----------Contact-section----------*/
+main .contact-container{
+  
+}
 /*
 rgb(56,8,84)
 button{
