@@ -14,11 +14,11 @@
   <body>
     <span class="animateMainBg"></span>
     <header>
-      <nav class="navbar">
+      <nav class="navbar"gi>
         <div class="left">Mohit <span class="surname">Kumar</span></div>
        
         <div class="right">
-          <label>
+          <label class="d-n-toggle">
             <input class="toggleCheckbox" type="checkbox">
             <ion-icon name="sunny" class="sun"></ion-icon>
             <img src="Images/Moon_white.png" class="moon icons">
@@ -315,6 +315,72 @@
           </section>
         </div>
       </section>
+      <hr>
+      <section class="contact-container">
+        <h2 class="section-title commonT">Contact Me</h2>
+        <div class="c-background-image">
+          <div class="c-box1">
+            <div class="c-row">
+              <div class="c-icon">
+                <div class="c-icon-circle">
+                  <ion-icon name="mail-outline"></ion-icon>
+                </div>
+              </div>
+              <div class="c-info">
+                <div>Email</div>
+                <div>mehramkmohit968<br>@gmail.com</div>
+              </div>
+            </div>
+            <div class="c-row">
+              <div class="c-icon">
+                <div class="c-icon-circle">
+                  <ion-icon name="call-outline"></ion-icon>
+                </div>
+              </div>
+              <div class="c-info">
+                <div>Phone No</div>
+                <div>
+                  +91 8894109815
+                </div>
+              </div>
+            </div>
+            <div class="c-row">
+              <div class="c-icon">
+                <div class="c-icon-circle">
+                  <ion-icon name="location-outline"></ion-icon>
+                </div>
+              </div>
+              <div class="c-info">
+                <div>Address</div>
+                <div>Nurpur, Himachal Pradesh - India</div>
+              </div>
+            </div>
+            <div class="c-resume-container">
+              <button class="download-resume-button">Download Resume</button>
+            </div>
+          </div>
+          <div class="c-form">
+            <h3>Have a Question ?</h3>
+            <form action="post">
+              <div class="form-group">
+                <label for="username"><span>Name&nbsp;:</span></label>
+                <input type="text" id="username" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email&nbsp;:</label>
+                <input type="email" id="email" required>
+              </div>
+              <div class="form-group">
+                <label for="message">Message&nbsp;:</label>
+                <textarea id="message" rows"4" required></textarea>
+              </div>
+              <div class="send-button">
+                <button class="form-button">Send</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
     </main>
     <footer>
       <div style="
@@ -330,7 +396,7 @@
       display:flex;
       gap:30px;
       padding:20px 0;
-      z-index:-10;
+      z-index:10;
       ">
         <span>
           Screen width: <span id="screen-width"></span>px

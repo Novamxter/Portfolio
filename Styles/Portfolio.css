@@ -225,7 +225,7 @@ a{
   transition:color 0.5s ease;
 }
 /*----------------Day-Night------------*/
-label{
+.d-n-toggle{
   position:relative;
   margin-right:30px;
   width:30px;
@@ -235,7 +235,7 @@ label{
   justify-content: center;
   align-items: center;
 }
-input{
+.toggleCheckbox{
   position:absolute;
   opacity:0;
 }
@@ -244,7 +244,7 @@ input{
   transition:1s ease;
   transition-delay: 0.8s;
 }
-input:checked~.moon{
+.toggleCheckbox:checked~.moon{
   transform: rotate(360deg) scale(0);
   transition-delay: 0s;
 }
@@ -255,7 +255,7 @@ input:checked~.moon{
   transform:scale(0);
   transition: 1s ease;
 }
-input:checked~.sun{
+.toggleCheckbox:checked~.sun{
   transform: scale(1) rotate(360deg);
   transition-delay:0.8s ;
 }
@@ -710,7 +710,128 @@ main .edu-container section{
   position:relative;
 }
 /*-----------Contact-section----------*/
-
+main .contact-container{
+  padding:20px;
+}
+main .contact-container .c-background-image{
+  padding:25px;
+  margin:15px -12px;
+  border-radius:10px;
+  background-image: url('../Images/digital-mountains.jpg');
+  background-size: cover;
+  background-position:center ;
+  display:flex;
+  flex-direction: column;
+}
+main .contact-container .c-background-image .c-box1{
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+  row-gap: 20px;
+}
+main .contact-container .c-row{
+  display:flex;
+  width:90%;
+  max-width:350px;
+  justify-content:center;
+  align-items: center;
+  column-gap:10px;
+}
+main .contact-container .c-icon ion-icon{
+  color:skyblue;
+  font-size: 30px;
+}
+main .contact-container .c-icon-circle{
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  height:70px;
+  width:70px;
+  background-color: black;
+  border-radius:50%;
+}
+main .contact-container .c-info{
+  display: flex;
+  flex-direction: column;
+  width:100%;
+}
+main .contact-container .c-info div:first-child{
+  font-size: 15px;
+  color:skyblue;
+  /*color:rgb(50,90,255);*/
+  font-weight: 700;
+}
+main .contact-container .c-info div:nth-child(2){
+  color:white;
+  font-size: 17px;
+  line-height:19px;
+}
+main .contact-container .c-form{
+  background-color: rgba(0,0,0,0.4);
+  backdrop-filter: blur(10px);
+  border-radius:15px;
+  border:2px solid rgba(0,0,0,0.5);
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  padding:20px;
+  margin-top:40px;
+  width:calc(100%-50px);
+  flex:1;
+}
+main .contact-container .c-resume-conrainer{
+  display: flex;
+  justify-content: center;
+}
+main .contact-container .download-resume-button{
+  border:none;
+  background: linear-gradient(to right,aqua,violet);
+  padding:10px 60px;
+  margin:10px 0;
+  border-radius:5px;
+}
+main .contact-container form{
+  display:flex;
+  flex-direction:column;
+  width:90%;
+}
+main .contact-container form input,main .contact-container form textarea{
+  height:35px;
+  width:100%;
+  border-radius:10px;
+  background-color: rgba(0,0,0,0.7);
+  border:none;
+  padding:0 10px;
+}
+main .contact-container form input:focus,main .contact-container form textarea:focus{
+  outline:none;
+  border:1px solid white;
+}
+main .contact-container form textarea{
+  height:70px;
+  padding:5px 10px;
+}
+main .contact-container .form-group{
+  display:flex;
+  align-items: flex-start;
+  flex-direction: column;
+  margin:5px -15px;
+}
+main .contact-container form label{
+  margin-left:10px;
+  font-size: 12px;
+}
+main .contact-container form .send-button{
+  display:flex;
+  justify-content: center;
+}
+main .contact-container form .form-button{
+  padding:10px 25px;
+  margin:15px 0 10px 0;
+  background: linear-gradient(to right,aqua,purple);
+  border:none;
+  border-radius:15px;
+}
 /*
 rgb(56,8,84)
 button{
