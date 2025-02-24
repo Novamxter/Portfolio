@@ -350,7 +350,78 @@ main .hero-container .pro-links i:active{
   box-shadow:0 5px 5px var(--bg-main);
   transition: background-color 0.5s ease-out,box-shadow 0.5s ease-out;
 }
-
+main .about-container{
+  display:flex;
+  flex-direction: column;
+  /* padding:30px; */
+  width:90%;
+}
+main .about-container h2{
+  margin-left:-30px;
+  margin-right:-30px;
+  margin-bottom:10px;
+  padding-left:30px;
+}
+main .about-container .about-summary p{
+  color:var(--tertiary-font-color);
+  margin-top:3px;
+  transition: color 1.5s ease-out;
+}
+main .about-container .profile{
+  display:flex;
+  flex-direction: column;
+  gap:10px;
+}
+main .about-container .bio-data h3{
+  display:flex;
+  justify-content : center;
+  margin-bottom:10px;
+  font-size:1.3em;
+}
+main .about-container .bio-data .data{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:5px 0;
+  /*border-bottom:0.3px solid #D2B4DE;*/
+  position:relative;
+  font-size: 0.9em;
+}
+main .about-container .bio-data .data:before{
+  content:'';
+  height:0.3px;
+  bottom:0;
+  left:0;
+  width:100%;
+  position:absolute;
+  background: linear-gradient(to right, transparent,#D2B4DE,transparent);
+}
+main .about-container .bio-data .data .data-name{
+  padding:2px 5px;
+  border-radius:4px;
+  background-color:#6C3483 ;
+  color:white;
+}
+main .about-container .bio-data .data .data-value{
+  text-align: right;
+  /*min-width:100px;*/
+  color:var(--tertiary-font-color);
+}
+main .about-container .profile-pic{
+  display:flex;
+  justify-content: center;
+  margin-top:20px;
+  padding:0 10px;
+}
+main .about-container .profile-pic img{
+  height:250px;
+  /*width:250px;*/
+  aspect-ratio: 1/1;
+  border-radius:100%;
+  object-fit: cover;
+  object-position: top;
+  box-shadow: 0 0 10px white;
+}
 /*----------Infinite-scroll--------*/
 main .about-container .infinite-scroll{
   margin:15px -30px 0 -30px;
