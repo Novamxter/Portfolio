@@ -130,7 +130,7 @@
     border:none;
   }
   ul li .ham-inner span{
-    font-size:1.25em;
+    font-size:1.15em;
     transition: font-size 0.3s ease, color 0.3s ease;
   }
   /*header .right li div*/
@@ -144,7 +144,7 @@
   }
   /*----------hero-section-----------*/
   main .hero-container .hero-banner{
-    font-size:3vw;
+    font-size:2.5vw;
   }
   main .hero-container .banner-button{
     height:40px;
