@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="Styles/Portfolio-Animation.css">
     <link rel="stylesheet" href="Styles/Portfolio.css">
     <link rel="stylesheet" href="Styles/Portfolio-Media.css">
+    <link rel="stylesheet" href="Styles/Render-HW.css">
   </head>
   <body>
     <span class="animateMainBg"></span>
@@ -316,7 +317,7 @@
         </div>
       </section>
       <hr>
-      <section class="contact-container">
+      <section id="contactMe" class="contact-container">
         <h2 class="section-title commonT">Contact Me</h2>
         <div class="c-background-image">
           <div class="c-box1">
@@ -383,37 +384,43 @@
       </section>
     </main>
     <footer>
-      <div style="
-      height:30px;
-      position: fixed; 
-      bottom: 0;
-      left: 0;
-      width: 100%; 
-      background: #000;
-      color: #fff;
-      justify-content:center;
-      font-size:1rem;
-      display:flex;
-      gap:30px;
-      padding:20px 0;
-      z-index:10;
-      ">
-        <span>
-          Screen width: <span id="screen-width"></span>px
-        </span>
-        <span>Screen height: <span id="screen-height"></span>px</span>
-       </div>
+      <p>&#169; 2025 Mohit | Passionate about coding & design.</p>
+      <p>"Code is like humor. When you have to explain it, it’s bad." – Cory House</p>
+      <ul>
+         <li><a href="mailto:your-email@example.com">Email</a></li>
+        <li><a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a></li>
+        <li><a href="https://github.com/your-username" target="_blank">GitHub</a></li>
+      </ul>
     </footer>
+    <div class="hw">
+      <span>
+        Screen width: <span id="screen-width"></span>px
+      </span>
+      <span>Screen height: <span id="screen-height"></span>px</span>
+    </div>
+    <button class="render-hw-button"></button>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script type="module" src="Scripts/Portfolio.js"></script>
     <script>
       document.getElementById('screen-width').textContent = window.innerWidth;
       document.getElementById('screen-height').textContent = window.innerHeight;
-      window.addEventListener('resize', () => {
-      document.getElementById('screen-width').textContent = window.innerWidth;
-      document.getElementById('screen-height').textContent = window.innerHeight;
-  });
-</script>
+      window.addEventListener('resize', ()=>{
+        document.getElementById('screen-width').textContent = window.innerWidth;
+        document.getElementById('screen-height').textContent = window.innerHeight;
+      });
+    </script>
+    <script>
+      const hw = document.querySelector(".hw");
+      const hwbutton = document.querySelector(".render-hw-button");
+            
+      hwbutton.addEventListener('click',()=>{
+        if(hw.style.display === "none"||hw.style.display===""){
+          hw.style.display = "flex";
+        }else{
+          hw.style.display = "none";
+        }
+      })
+    </script>
   </body>
 </html>

@@ -832,6 +832,26 @@ main .contact-container form .form-button{
   border:none;
   border-radius:15px;
 }
+/*-----------footer----------*/
+footer{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding:40px 15px;
+  background: linear-gradient(to top right,#3f2b96,#a8c0ff);
+}
+footer p{
+  text-align: center;
+  color:white;
+}
+footer ul{
+  display:flex;
+}
+footer ul li{
+  color:white;
+  list-style: none;
+}
 /*
 rgb(56,8,84)
 button{
