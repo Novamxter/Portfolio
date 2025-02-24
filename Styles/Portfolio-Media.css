@@ -251,7 +251,7 @@
   main .contact-container .c-form{
     max-width:400px;
     margin-top:-10px;
-  }
+  
 }
 @media (min-width:790px){
   /*---------service-section-----------*/
@@ -383,7 +383,7 @@
     height:700px;
   }
   main .about-container .skills{
-    margin:-34% -20% 0 40%;
+    margin:-36% -20% 0 40%;
   }
   /*----------service-section---------*/
   main .services-container .service-box{
