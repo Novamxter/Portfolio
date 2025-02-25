@@ -37,11 +37,12 @@
   .navbar .right{
     margin-right:40px;
   }
-  main .about-container .profile{
-    flex-direction:row-reverse;
-    justify-content:space-between;
+  main .about-container .about-me{
+    display:flex;
+    flex-direction: row-reverse;
     align-items: center;
-    column-gap:30px;
+    justify-content: space-around;
+    gap:20px;
   }
   main .about-container .about-summary{
     padding:0 10px;
@@ -157,7 +158,8 @@
     position:static;
   }
   main .about-container{
-    padding:40px 50px;
+    display:flex;
+    flex-direction: column-reverse;
   }
   main .about-container h2{
     margin-bottom:20px;
@@ -168,37 +170,15 @@
   main .about-container .bio-data .data{
     font-size: 0.7em;
   }
-  main .about-container .profile{
-    flex-direction:column-reverse;
-    margin-top:-500px;
-    row-gap: 40px;
-    width:45%;
-  }
-  main .about-container .profile-pic img{
-    height:260px;
-  }
-  main .about-container .about-content .about-summary{
-    margin-left:48%;
-  }
-  main .about-container .skills{
-    width:100%;
-    display:flex;
-    flex-direction: row-reverse;
-    align-items: flex-start;
-  }
   main .about-container .t-skills{
     font-size:1.1em;
-    width:50%;
-    margin:0;
-  }
-  main .about-container .l-skills{
+  } 
+  /* main .about-container .l-skills{
     font-size:1.1em;
     width:50%;
     margin:0;
-  }
-  /*main .about-container .t-skills{
-    width:47%;
-  }*/
+  } */
+
   main .about-container .progress{
     row-gap:35px;
   }
@@ -254,6 +234,12 @@
   
 }
 @media (min-width:790px){
+  /*-----------skills--------------*/
+  main .about-container .skills .s-first-row{
+    flex-direction: row;
+    justify-content:space-around;
+    gap:20px;
+  }
   /*---------service-section-----------*/
   main .services-container{
     padding:30px;
@@ -285,19 +271,14 @@
  
 }
 @media (min-width:900px){
+  main .about-container .bio-data{
+    min-width:340px;
+ }
   main .about-container .bio-data .data{
     font-size: 0.9em;
   }
-  main .about-container .profile{
-    width:50%;
-    margin-top:-480px;
-    row-gap:50px;
-  }
   main .about-container .profile-pic img{
     height:270px;
-  }
-  main .about-container .about-content .about-summary{
-    margin-left:53%;
   }
   /*----------service-section---------*/
   main .services-container .service-box{
@@ -323,27 +304,20 @@
     align-items: start;
     font-size: 2vw;
   }
-  main .about-container .profile{
-    margin-top:-200px;
-    width:38%;
-  }
-  main .about-container .about-content .about-summary{
-    margin-left:42%;
-  }
-  main .about-container .t-skills{
+  /* main .about-container .t-skills{
     width:50%;
-  }
+  } */
   /*--------skills----------*/
-  main .about-container .skills{
+  /* main .about-container .skills{
     width:60%;
     display:flex;
     align-items: flex-start;
     margin:-31% -20% 0 40%;
-  }
-  main .about-container .t-skills{
+  } */
+  /* main .about-container .t-skills{
     width:50%;
     margin:0;
-  }
+  } */
   main .about-container .l-skills{
     width:50%;
     margin:0;
@@ -377,33 +351,28 @@
     font-size: 1.9vw;
     line-height: 2.4em;
   }
-  main .about-container{
-    display:flex;
-    align-items: center;
-    height:700px;
-  }
-  main .about-container .skills{
+  /* main .about-container .skills{
     margin:-36% -20% 0 40%;
-  }
+  } */
   /*----------service-section---------*/
   main .services-container .service-box{
     max-width:300px;
   }
 }
 @media (min-width:1260px){
-  main .about-container .skills{
+  /* main .about-container .skills{
     margin:-32% -20% 0 40%;
-  }
+  } */
 }
 @media (min-width:1340px){
-  main .about-container .skills{
+  /* main .about-container .skills{
     margin:-30% -20% 0 40%;
-  }
+  } */
 }
 @media (min-width:1360px){
-  main .about-container .skills{
+  /* main .about-container .skills{
     margin:-28% -20% 0 40%;
-  }
+  } */
 }
 @media (min-height:700px){
   main .hero-container{
