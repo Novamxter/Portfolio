@@ -1,4 +1,4 @@
-import { setProgress } from "./P-progress.js";
+import { setSkillProgress,setToolProgress} from "./P-progress.js";
 const hamButton = document.querySelector(".hamburger");
 const navUl = document.querySelector("ul");
 const navbar = document.querySelector("nav");
@@ -6,7 +6,8 @@ const addLinks = document.querySelector(".additional-links");
 const checkbox = document.querySelector(".toggleCheckbox");
 const dayBackgroundMain = document.querySelector(".animateMainBg");
 const hamItem = document.querySelectorAll("li");
-setProgress();
+setSkillProgress();
+setToolProgress()
 setReadMore();
 handleSticky();
 handleHamMenu();
@@ -14,10 +15,8 @@ highlightActiveMenu();
 setInitialClipPath();
 setLinksTopValue();
 window.addEventListener("resize", () => {
-    //setInitialClipPath()
     setLinksTopValue();
 });
-// Disable checkbox w
 
 checkbox.addEventListener("click", () => {
     const rect = checkbox.getBoundingClientRect();

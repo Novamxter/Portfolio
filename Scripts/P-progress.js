@@ -1,20 +1,8 @@
 const percentage = [80,99,90,50]
-const colors = ['red','cyan','pink','yellow']
 const titles = ['HTML','CSS','JS','React']
-const shadow = ['red','cyan','pink','yellow']
-document.addEventListener('DOMContentLoaded',()=>{
-  const blocks = document.querySelectorAll('.block');
-  const observer = new IntersectionObserver((entries, observer) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        handleProgress(entry);
-        observer.unobserve(entry.target);
-      }
-    });
-  });
-  blocks.forEach(block => observer.observe(block));
-});
-export function setProgress(){
+const toolList = ['VS code','Git','Github','AcodeX']
+
+export function setSkillProgress(){
   let html = ''
   for(let i = 0;i<percentage.length;i++){
     html+=`
@@ -31,4 +19,16 @@ export function setProgress(){
   }
   document.querySelector('.progress').innerHTML = html
 }
-
+export function setToolProgress(){
+  let html ='';
+  for(let i = 0;i<toolList.length;i++){
+    html+=`
+    <div class="tool-progress">
+      <div class="p-info">
+        <p>${toolList[i]}</p>
+      </div>
+      <div class="p-bar tool-bar"></div>
+    </div>`
+  }
+  document.querySelector('.tools').innerHTML = html
+}
