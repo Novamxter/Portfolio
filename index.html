@@ -387,6 +387,9 @@
         <li><a href="https://github.com/your-username" target="_blank">GitHub</a></li>
       </ul>
     </footer>
+    <div class="preloader">
+      <div class="loader"></div>
+    </div>
     <div class="hw">
       <span>
         Screen width: <span id="screen-width"></span>px
@@ -397,6 +400,11 @@
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script type="module" src="Scripts/Portfolio.js"></script>
+    <script>
+    window.addEventListener("load", function() {
+        document.querySelector(".preloader").style.display = "none";
+    });
+</script>
     <script>
       document.getElementById('screen-width').textContent = window.innerWidth;
       document.getElementById('screen-height').textContent = window.innerHeight;
