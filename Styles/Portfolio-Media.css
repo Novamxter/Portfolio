@@ -56,12 +56,15 @@
   main .about-container .progress{
     padding:10px 20px 20px 20px;
   }
-  main .about-container .s-second-row{
+  main .about-container .sub-row{
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
     max-width:600px;
+    justify-content: space-between;
     gap:5%;
+  }
+  main .about-container .infinite-scroll{
+    margin:30px -20px 0 -20px;
   }
   /*---------service-section---------*/
   main .services-container .service-box{
@@ -330,10 +333,10 @@
     width:50%;
     margin:0;
   } */
-  main .about-container .infinite-scroll{
+  /* main .about-container .infinite-scroll{
     width:60%;
     margin:45px 0 0 40%;
-  }
+  } */
   .commonT{
     padding-left:70px;
   }

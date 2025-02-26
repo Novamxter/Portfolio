@@ -276,6 +276,7 @@ a{
 /*-----------Hero-Section--------------*/
 main .hero-container{
   height:100vh;
+  max-height:1000px;
   display:flex;
   justify-content: center;
   align-items: center;
@@ -498,11 +499,11 @@ main .about-container .p-bar{
 main .about-container .p-bar-fill{
   height:100%;
   width:var(--progress-width);
-  background: linear-gradient(to right,skyblue,violet);
+  background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
   border-radius:10px;
 }
 /*-------------Tools------------*/
-main .about-container .s-second-row{
+main .about-container .sub-row{
   display:flex;
   flex-direction: column;
 }
@@ -526,7 +527,9 @@ main .about-container .tool-progress{
 }
 main .about-container .tool-bar{
   height:4px;
-  background: linear-gradient(to right,orange,red);
+ background: linear-gradient(45deg,#a770ef,#cf8bf3,#fdb99b);
+
+  /* background: linear-gradient(to right,orange,red); */
 }
 main .about-container .tools{
     display:grid;
@@ -591,7 +594,7 @@ main .about-container .l-skills .l-circles{
 main .about-container .l-skills .l-circle{
   height:15px;
   width:15px;
-  background: linear-gradient(to right bottom,pink,#6C3483);
+  background: linear-gradient(45deg,#00d2ff,#928DAB);
   border-radius:10px;
 }
 main .about-container .l-skills .blanck-circle{
@@ -600,6 +603,9 @@ main .about-container .l-skills .blanck-circle{
 /*----------Infinite-scroll--------*/
 main .about-container .infinite-scroll{
   margin:15px -30px 0 -30px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }
 main .about-container .image{
   border-radius:100%;
@@ -735,13 +741,13 @@ main .edu-container section h3{
 }
 main .edu-container section p{
   font-size: 0.9em;
-  color:#ffe3ef;
+  color:white;
 }
 main .edu-container section .period{
   letter-spacing: 1px;
   font-size: 1.2em;
   font-weight: 900;
-  color:#f6b162;
+  color:lavender;
 }
 main .edu-container .edu-wrapper{
   display:flex;
@@ -751,7 +757,7 @@ main .edu-container .edu-wrapper{
   margin:0 auto;
 }
 main .edu-container section{
-  background-color:#8b5160;
+  background:linear-gradient(to right bottom,#4CA1AF,#C4E0E5);
   /*width:calc(50%-70px);*/
   border-radius:15px;
   margin:30px 0 0 0;
@@ -889,7 +895,7 @@ footer{
   justify-content: center;
   align-items: center;
   padding:40px 15px;
-  background: linear-gradient(to top right,#3f2b96,#a8c0ff);
+  background: linear-gradient(to top right,#4CA1AF,#a8c0ff);
 }
 footer p{
   text-align: center;
