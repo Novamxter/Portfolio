@@ -54,7 +54,14 @@
     height:240px;
   }
   main .about-container .progress{
-    padding:0 20px;
+    padding:10px 20px 20px 20px;
+  }
+  main .about-container .s-second-row{
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    max-width:600px;
+    gap:5%;
   }
   /*---------service-section---------*/
   main .services-container .service-box{
@@ -238,6 +245,7 @@
   main .about-container .skills .s-first-row{
     flex-direction: row;
     justify-content:space-around;
+    align-items: center;
     gap:20px;
   }
   /*---------service-section-----------*/
@@ -318,10 +326,10 @@
     width:50%;
     margin:0;
   } */
-  main .about-container .l-skills{
+  /* main .about-container .l-skills{
     width:50%;
     margin:0;
-  }
+  } */
   main .about-container .infinite-scroll{
     width:60%;
     margin:45px 0 0 40%;
