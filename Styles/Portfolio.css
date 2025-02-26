@@ -884,7 +884,8 @@ main .contact-container form .send-button{
 main .contact-container form .form-button{
   padding:10px 25px;
   margin:15px 0 10px 0;
-  background: linear-gradient(to right,aqua,purple);
+  background: linear-gradient(to right, #7474BF 0%, #348AC7 100%);
+  /* background:linear-gradient(45deg, #FF512F 0%, #DD2476 100%); */
   border:none;
   border-radius:15px;
 }
