@@ -402,7 +402,8 @@ main .about-container .bio-data .data{
   position:relative;
   font-size: 0.9em;
 }
-main .about-container .bio-data .data .bottom-line{
+main .about-container .bio-data .data:before{
+  content: "";
   height:0.3px;
   bottom:0;
   left:0;
@@ -412,7 +413,8 @@ main .about-container .bio-data .data .bottom-line{
   /* background: #D2B4DE; */
   /* background: white; */
   /* background:linear-gradient(to right,transparent,#D2B4DE) ; */
-  background: linear-gradient(to right, transparent 0%,#D2B4DE 51%,transparent 100%);
+  background: linear-gradient(to right, transparent,#D2B4DE ,transparent);
+  background: -webkit-linear-gradient(to right,transparent,#D2B4DE ,transparent);
   z-index: 30;
 }
 main .about-container .bio-data .data .data-name{
@@ -928,6 +930,11 @@ footer ul .footer-icon{
 footer ul li:hover{
   height:45px;
   width:45px;
+}
+
+.check-mark{
+  font-size: 251px;
+  color:#77B255;
 }
 /* Preloader Full Screen */
 .preloader{
