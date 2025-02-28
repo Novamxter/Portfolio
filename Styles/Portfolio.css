@@ -892,6 +892,44 @@ main .contact-container form .form-button{
   border:none;
   border-radius:15px;
 }
+main .form-alert{
+  position:fixed;
+  top:0;
+  bottom:0;
+  width:100%;
+  z-index: 100;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(5px);
+}
+main .form-alert .form-success-alert{
+  height:150px;
+  width:250px;
+  border-radius: 10px;
+  padding:20px;
+  background-color: white;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* main .form-alert .form-success-alert .check-mark-container{
+  position:absolute;
+  top:-30px;
+  background-color: white;
+  border-radius: 50%;
+} */
+main .form-alert .form-success-alert .check-mark{
+  position:absolute;
+  top:-30px;
+  border-radius: 50%;
+  background-color: white;
+  font-size: 65px;
+  color:#77B255;
+  text-align: center;
+}
 /*-----------footer----------*/
 footer{
   display:flex;
@@ -930,11 +968,6 @@ footer ul .footer-icon{
 footer ul li:hover{
   height:45px;
   width:45px;
-}
-
-.check-mark{
-  font-size: 251px;
-  color:#77B255;
 }
 /* Preloader Full Screen */
 .preloader{

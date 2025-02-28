@@ -13,9 +13,9 @@ document.getElementById("contactForm").addEventListener("submit", async function
     let result = await response.json();
 
     if (result.success) {
-        alert("success")
-       // document.getElementById("successMessage").style.display = "block";
-        this.reset(); // Optional: Reset form fields after submission
+        //alert("success")
+       document.querySelector('.form-success-alert').style.display = "flex";
+        this.reset(); // Reset form fields after submission
     } else {
         alert("Something went wrong. Please try again!");
     }
