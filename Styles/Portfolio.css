@@ -893,6 +893,7 @@ main .contact-container form .form-button{
   border:none;
   border-radius:15px;
 }
+/*-------------------success-alert---------------------*/
 main .form-alert{
   position:fixed;
   top:0;
@@ -908,10 +909,10 @@ main .form-alert .form-success-alert{
   height:150px;
   width:250px;
   border-radius: 10px;
-  padding:20px;
+  padding:30px;
   background-color: white;
   position: relative;
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -936,13 +937,67 @@ main .form-alert .form-success-alert p{
   text-align:center;
 }
 main .form-alert .form-success-alert .thank-you-message{
-  /* margin: 20px 0 0 0; */
+  margin: 30px 0 0 0;
   font-size: 20px;
   font-weight: 700;
 }
 main .form-alert .form-success-alert .short-message{
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 500;
+}
+main .form-alert .alert-ok-button{
+  border: none;
+  background-color: #77B255;
+  padding: 7px 30px;
+  margin: 10px;
+  border-radius: 5px;
+}
+/*-------------------fail-alert---------------------*/
+main .form-alert .form-fail-alert{
+  display: flex;
+  flex-direction: column;
+  /* height:150px; */
+  width:250px;
+  border-radius: 10px;
+  padding:20px;
+  background-color: white;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+}
+main .form-alert .form-fail-alert p{
+  color: black;
+}
+main .form-alert .form-fail-alert .fail-icon{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .form-alert .form-fail-alert .oops-message{
+  width: 100%;
+  margin-left: -40px;
+  text-align: center;
+  color:#cc0000;
+  font-size: 20px;
+  font-weight: 500;
+}
+main .form-alert .form-fail-alert .fail-icon ion-icon{
+  color:#cc0000;
+  font-size: 40px;
+  
+}
+main .form-alert .form-fail-alert .fail-message{
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+}
+main .form-alert .form-fail-alert .fail-alert-ok-button{
+  border: none;
+  background-color: #cc0000;
+  padding: 7px 30px;
+  margin: 10px;
+  border-radius: 5px;
 }
 /*-----------footer----------*/
 footer{
