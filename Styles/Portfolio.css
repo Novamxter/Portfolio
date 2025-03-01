@@ -24,7 +24,7 @@
   --primary-font-color:black;
   --logo-boldness:700;
   --outer-width:3px;
-  -inner-width:1.5px;
+  --inner-width:1.5px;
   --item-border : black;
   --secondary-font-color:black;
   --menu-bg:#F5F5F5;
@@ -69,6 +69,7 @@ hr{
   border-radius:0.1875rem;/*3px*/
   margin:0.3125rem auto;/*5px*/
   -webkit-transition:all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   background-color:var(--bar-color);
 }
 .hamburger.active .bar:nth-child(2){
@@ -929,6 +930,19 @@ main .form-alert .form-success-alert .check-mark{
   font-size: 65px;
   color:#77B255;
   text-align: center;
+}
+main .form-alert .form-success-alert p{
+  color:black;
+  text-align:center;
+}
+main .form-alert .form-success-alert .thank-you-message{
+  /* margin: 20px 0 0 0; */
+  font-size: 20px;
+  font-weight: 700;
+}
+main .form-alert .form-success-alert .short-message{
+  font-size: 13px;
+  font-weight: 500;
 }
 /*-----------footer----------*/
 footer{
