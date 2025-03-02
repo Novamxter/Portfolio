@@ -15,7 +15,7 @@
   <body>
     <span class="animateMainBg"></span>
     <header>
-      <nav class="navbar"gi>
+      <nav class="navbar">
         <div class="left">Mohit <span class="surname">Kumar</span></div>
        
         <div class="right">
@@ -30,7 +30,7 @@
             <div class="bar"></div>
             <div class="bar"></div>
           </div>
-          <ul>
+          <ul class="ham-item-ul">
             <li class="ham-item"><a href="#home">
               <div class="ham-outer">
                 <div class="ham-inner">
@@ -378,14 +378,12 @@
           </div>
         </div>
       </section>
-      <section class="form-alert">
+      <div class="form-alert">
         <div class="form-success-alert">
           <div class="check-mark-container">
-            <div id="confirm-animation" class="check-mark"></div>
+            <div id="confirm-animation" class="check-mark animation-container" data-animation="confirm_Animation"></div>
           </div>
-          
           <!-- <ion-icon class="check-mark" name="checkmark-circle"></ion-icon> -->
-          
           <p class="Thank-you-message">Thank you for reaching out!</p>
           <p class="short-message">Your message has been successfully sent. I’ll get back to you as soon as possible. Have a great day!</p>
           <button class="success-alert-ok-button alert-ok-button">Ok</button>
@@ -401,10 +399,10 @@
         </div>
         
       </div> 
-      </section>
-      <section class="sending-preloader">
-        <div id="plane-animation"></div>
-      </section>
+      </div>
+      <div class="sending-preloader">
+        <div id="plane-animation" class="animation-container" data-animation="loading_plane_Animation"></div>
+      </div>
     </main>
     <footer>
       <p>&#169; 2025 Mohit | Passionate about coding & design.</p>
@@ -440,10 +438,10 @@
     <script src="Scripts/Form_Submission.js"></script>
     <script src="Scripts/Json_Animations.js"></script>
     <script>
-    window.addEventListener("load", function() {
-        document.querySelector(".preloader").style.display = "none";
-    });
-</script>
+      //window.addEventListener("load", function() {
+        //document.querySelector(".preloader").style.display = "none";
+     // });
+    </script>
     <script>
       document.getElementById('screen-width').textContent = window.innerWidth;
       document.getElementById('screen-height').textContent = window.innerHeight;

@@ -1,11 +1,11 @@
 import { setSkillProgress,setToolProgress} from "./P-progress.js";
 const hamButton = document.querySelector(".hamburger");
-const navUl = document.querySelector("ul");
+const navUl = document.querySelector(".ham-item-ul");
 const navbar = document.querySelector("nav");
 const addLinks = document.querySelector(".additional-links");
 const checkbox = document.querySelector(".toggleCheckbox");
 const dayBackgroundMain = document.querySelector(".animateMainBg");
-const hamItem = document.querySelectorAll("li");
+const hamItem = document.querySelectorAll(".ham-item");
 setSkillProgress();
 setToolProgress()
 setReadMore();
@@ -113,7 +113,7 @@ function highlightActiveMenu() {
     document.addEventListener("DOMContentLoaded", () => {
         const main = document.querySelector("main");
         const sections = main.querySelectorAll(":scope > section");
-        const navLinks = document.querySelectorAll("nav ul li a");
+        const navLinks = document.querySelectorAll("nav .ham-item-ul .ham-item a");
         const changeActiveLink = () => {
             let currentSection = "";
             sections.forEach(section => {
