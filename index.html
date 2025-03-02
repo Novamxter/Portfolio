@@ -380,11 +380,15 @@
       </section>
       <section class="form-alert">
         <div class="form-success-alert">
-          <ion-icon class="check-mark" name="checkmark-circle"></ion-icon>
-          <!-- <div class="check-mark-container"></div>-->
+          <div class="check-mark-container">
+            <div id="confirm-animation" class="check-mark"></div>
+          </div>
+          
+          <!-- <ion-icon class="check-mark" name="checkmark-circle"></ion-icon> -->
+          
           <p class="Thank-you-message">Thank you for reaching out!</p>
           <p class="short-message">Your message has been successfully sent. I’ll get back to you as soon as possible. Have a great day!</p>
-          <button class="success-alert-ok-button">Ok</button>
+          <button class="success-alert-ok-button alert-ok-button">Ok</button>
         </div>
       <div class="form-fail-alert">
         <div class="fail-icon">
@@ -393,12 +397,14 @@
         </div>
         <div class="fail-message">
           <p>Something went wrong, your message couldn't be sent. Please try again later or contact me directly.</p>
-          <button class="fail-alert-ok-button">Ok</button>
+          <button class="fail-alert-ok-button alert-ok-button">Ok</button>
         </div>
         
       </div> 
       </section>
-      
+      <section class="sending-preloader">
+        <div id="plane-animation"></div>
+      </section>
     </main>
     <footer>
       <p>&#169; 2025 Mohit | Passionate about coding & design.</p>
@@ -426,10 +432,13 @@
       <span>Screen height: <span id="screen-height"></span>px</span>
     </div>
     <button class="render-hw-button"></button>
+    
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.9.6/lottie.min.js"></script>
     <script type="module" src="Scripts/Portfolio.js"></script>
     <script src="Scripts/Form_Submission.js"></script>
+    <script src="Scripts/Json_Animations.js"></script>
     <script>
     window.addEventListener("load", function() {
         document.querySelector(".preloader").style.display = "none";
