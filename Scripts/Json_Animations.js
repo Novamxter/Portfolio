@@ -5,12 +5,14 @@ document.addEventListener("DOMContentLoaded", function(){
     entries.forEach(entry=>{
       if (entry.isIntersecting) {
         let container = entry.target;
+        console.log(container.getAttribute("data-loop-value"))
+        let loopValue = container.getAttribute("data-loop-value")
         let animationFile = container.getAttribute("data-animation");
         if (!container.dataset.loaded) { // Load only once
           lottie.loadAnimation({
             container: container,
             renderer: "svg",
-            loop: true,
+            loop: loopValue==="true"?true:false,
             autoplay: true,
             path: `./assets/Json/${animationFile}.json`
           });

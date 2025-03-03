@@ -670,7 +670,7 @@ main .about-container .item8{
     left:-100px;
   }
 }
-/*-----------services-section----------*/
+/*---------services-section----------*/
 main .services-container{
   padding:20px;
 }
@@ -989,7 +989,6 @@ main .form-alert .form-fail-alert .oops-message{
 main .form-alert .form-fail-alert .fail-icon ion-icon{
   color:#cc0000;
   font-size: 40px;
-  
 }
 main .form-alert .form-fail-alert .fail-message{
   text-align: center;

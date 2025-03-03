@@ -10,15 +10,16 @@ document.getElementById("contactForm").addEventListener("submit", async function
     });
 
     let result = await response.json();
-    stopSendAnimation()
+    
     if (result.success) {
       //alert("success")
+      stopSendAnimation()
       document.querySelector('.form-alert').style.display = "flex"
       document.querySelector('.form-success-alert').style.display = "flex";
       this.reset(); // Reset form fields after submission
     }else{
-      console.log("failed")
       //alert("Something went wrong. Please try again!");
+      stopSendAnimation()
       document.querySelector('.form-alert').style.display = "flex"
       document.querySelector('.form-fail-alert').style.display = "flex";
       this.reset();
@@ -26,19 +27,20 @@ document.getElementById("contactForm").addEventListener("submit", async function
 });
 document.addEventListener('DOMContentLoaded',()=>{
   handleOkButton();
+  handleSendButton();
 });
 
-// function handleSendButton(){
-//   document.querySelector('.form-send-button ').addEventListener('click',()={
-//     startSendAnimation()
-//   })
-// }
-// function startSendAnimation(){
-//   document.querySelector('.sending-preloader').style.display = 'flex'
-// }
-// function stopSendAnimation(){
-//   document.querySelector('.sending-preloader').style.display = 'none'
-// }
+function handleSendButton(){
+  document.querySelector('.form-send-button ').addEventListener('click',()=>{
+    startSendAnimation()
+  })
+}
+function startSendAnimation(){
+  document.querySelector('.sending-preloader').style.display = 'flex'
+}
+function stopSendAnimation(){
+  document.querySelector('.sending-preloader').style.display = 'none'
+}
 function handleOkButton(){
   if(successButton){
     successButton.addEventListener('click',()=>{
