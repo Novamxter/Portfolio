@@ -10,14 +10,14 @@ document.getElementById("contactForm").addEventListener("submit", async function
     });
 
     let result = await response.json();
-
+    stopSendAnimation()
     if (result.success) {
       //alert("success")
       document.querySelector('.form-alert').style.display = "flex"
       document.querySelector('.form-success-alert').style.display = "flex";
-      console.log("success")
       this.reset(); // Reset form fields after submission
     }else{
+      console.log("failed")
       //alert("Something went wrong. Please try again!");
       document.querySelector('.form-alert').style.display = "flex"
       document.querySelector('.form-fail-alert').style.display = "flex";
@@ -28,15 +28,17 @@ document.addEventListener('DOMContentLoaded',()=>{
   handleOkButton();
 });
 
-function handleSendButton(){
-  
-}
-function startSendAnimation(){
-  
-}
-function stopSendAnimation(){
-  
-}
+// function handleSendButton(){
+//   document.querySelector('.form-send-button ').addEventListener('click',()={
+//     startSendAnimation()
+//   })
+// }
+// function startSendAnimation(){
+//   document.querySelector('.sending-preloader').style.display = 'flex'
+// }
+// function stopSendAnimation(){
+//   document.querySelector('.sending-preloader').style.display = 'none'
+// }
 function handleOkButton(){
   if(successButton){
     successButton.addEventListener('click',()=>{

@@ -1003,14 +1003,34 @@ main .form-alert .form-fail-alert .fail-alert-ok-button{
   margin: 10px;
   border-radius: 5px;
 }
+/*-----------Plane-animation----------*/
+#plane-animation{
+  /* position: absolute; */
+  height:200px;
+  width:200px;
+}
 /*------Sending-preloader----*/
 main .sending-preloader{
-  background-color:skyblue;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color:#0066cc;
   position: fixed;
   top: 0;
   bottom: 0;
   width: 100%;
   z-index: 99;
+}
+main .sp-container{
+  position: relative;
+  /* height: 300px; */
+}
+main .sending-message{
+  position: absolute;
+  top: 130px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 /*-----------footer----------*/
 footer{
@@ -1051,11 +1071,7 @@ footer ul li:hover{
   height:45px;
   width:45px;
 }
-/*-----------Plane-animation----------*/
-#plane-animation{
-  height:100px;
-  width:100px;
-}
+
 /* #plane-animation svg{
   filter: hue-rotate(90deg) brightness(1.2);
 } */

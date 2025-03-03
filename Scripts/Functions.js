@@ -1,15 +1,44 @@
 
-function setInitialClipPath(){
+const hamButton = document.querySelector(".hamburger");
+const navUl = document.querySelector(".ham-item-ul");
+const navbar = document.querySelector("nav");
+const addLinks = document.querySelector(".additional-links");
+const checkbox = document.querySelector(".toggleCheckbox");
+const dayBackgroundMain = document.querySelector(".animateMainBg");
+const hamItem = document.querySelectorAll(".ham-item");
+
+export function setInitialClipPath(){
     const rect=checkbox.getBoundingClientRect()
     const centerX = rect.left + rect.width/2;
     const centerY = rect.top + rect.height/2;
     dayBackgroundMain.style.clipPath = `circles(0% at ${centerX}px ${centerY}px)`;
 }
-function setLinksTopValue() {
+export function setReadMore() {
+    const boxes = document.querySelectorAll(".service-box");
+    boxes.forEach(box => {
+        const btn = box.querySelector(".read-more-btn");
+        const serviceBox = box.querySelector(`p`);
+        btn.addEventListener("click", () => {
+            if (
+                serviceBox.style.maxHeight === "var(--service-height)" ||
+                !serviceBox.style.maxHeight
+            ) {
+                serviceBox.style.maxHeight = serviceBox.scrollHeight + "px";
+                btn.textContent = "read less";
+                serviceBox.style.opacity = "1";
+            } else {
+                serviceBox.style.maxHeight = "var(--service-height)";
+                serviceBox.style.opacity = "0.7";
+                btn.textContent = "...read More";
+            }
+        });
+    });
+}
+export function setLinksTopValue() {
     const height = navUl.offsetHeight;
     addLinks.style.setProperty("--menu-height", `${height + 30}px`);
 }
-function handleSticky() {
+export function handleSticky() {
     const stickyHeadings = document.querySelectorAll(".section-title");
     stickyHeadings.forEach(stickyHeading => {
         window.addEventListener("scroll", () => {
@@ -22,7 +51,7 @@ function handleSticky() {
         });
     });
 }
-function handleHamMenu() {
+export function handleHamMenu() {
     hamButton.addEventListener("click", () => {
         handleActiveClass();
     });
@@ -37,13 +66,13 @@ function handleHamMenu() {
         });
     });
 }
-function handleActiveClass() {
+export function handleActiveClass() {
     hamButton.classList.toggle("active");
     navUl.classList.toggle("active");
     hamItem.forEach(item => item.classList.toggle("item-zoom"));
     addLinks.classList.toggle("active-add");
 }
-function highlightActiveMenu() {
+export function highlightActiveMenu() {
     document
         .querySelector(".ham-item:nth-child(1)")
         .classList.add("active-ham-link");

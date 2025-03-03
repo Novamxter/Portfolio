@@ -372,7 +372,7 @@
                 <textarea id="message" rows"4" required name="message"></textarea>
               </div>
               <div class="send-button">
-                <button class="form-button">Send</button>
+                <button class="form-send-button form-button">Send</button>
               </div>
             </form>
           </div>
@@ -401,7 +401,11 @@
       </div> 
       </div>
       <div class="sending-preloader">
-        <div id="plane-animation" class="animation-container" data-animation="loading_plane_Animation"></div>
+        <div class="sp-container">
+          <div id="plane-animation" class="animation-container" data-animation="loading_plane_Animation"></div>
+          <p class="sending-message">Sending...</p>
+        </div>
+        
       </div>
     </main>
     <footer>
@@ -434,7 +438,7 @@
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.9.6/lottie.min.js"></script>
-    <script type="module" src="Scripts/Portfolio.js"></script>
+    <script type="module" src="Scripts/main.js"></script>
     <script src="Scripts/Form_Submission.js"></script>
     <script src="Scripts/Json_Animations.js"></script>
     <script>
