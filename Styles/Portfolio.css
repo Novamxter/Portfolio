@@ -196,7 +196,7 @@ a{
   transform: scale(1);
   opacity:1;
 }
-/*---------------navbar----------------*/
+/*-------------navbar--------------*/
 .navbar{
   position:fixed;
   background-color: var(--night-bg-nav);
@@ -225,7 +225,7 @@ a{
   margin-right: 1.25rem;/*20px*/
   transition:color 0.5s ease;
 }
-/*----------------Day-Night------------*/
+/*--------------Day-Night------------*/
 .d-n-toggle{
   position:relative;
   margin-right:30px;
@@ -242,11 +242,13 @@ a{
 }
 .moon{
   position:absolute;
+  transform: rotate(310deg);
   transition:1s ease;
   transition-delay: 0.8s;
+  margin-bottom: -5px;
 }
 .toggleCheckbox:checked~.moon{
-  transform: rotate(360deg) scale(0);
+  transform: rotate(570deg) scale(0);
   transition-delay: 0s;
 }
 .sun{
@@ -416,7 +418,6 @@ main .about-container .bio-data .data:before{
   /* background:linear-gradient(to right,transparent,#D2B4DE) ; */
   background: linear-gradient(to right, transparent,#D2B4DE ,transparent);
   background: -webkit-linear-gradient(to right,transparent,#D2B4DE ,transparent);
-  z-index: 30;
 }
 main .about-container .bio-data .data .data-name{
   padding:2px 5px;
@@ -777,7 +778,7 @@ main .contact-container .c-background-image{
   padding:25px;
   margin:15px -12px;
   border-radius:10px;
-  background-image: url('../Images/digital-mountains.jpg');
+  background-image: url('../assets/Images/digital-mountains.jpg');
   background-size: cover;
   background-position:center ;
   display:flex;

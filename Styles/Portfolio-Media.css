@@ -110,7 +110,7 @@
   .navbar .left{
     display:none;
   }
-  .navbar .right ul{
+  .navbar .right .ham-item-ul{
     position:static;
     height:3.125rem;/*50px*/
     gap:0;
@@ -124,33 +124,33 @@
     background-color:transparent;
     margin-right:40px;
   }
-  .navbar .right ul .ham-item{
+  .navbar .right .ham-item-ul .ham-item{
     width:auto;
     transform: scale(1);
     opacity:1;
   }
-  ul li .ham-outer{
+  .ham-item-ul .ham-item .ham-outer{
     border:none;
     margin-top:-5px;
   }
-  ul li .ham-outer,ul li .ham-inner{
+  .ham-item-ul .ham-item .ham-outer,.ham-item-ul .ham-item .ham-inner{
     display:inline-block;
     height:auto;
     width:auto;
     gap:0;
     border:none;
   }
-  ul li .ham-inner span{
+  .ham-item-ul .ham-item .ham-inner span{
     font-size:1.15em;
     transition: font-size 0.3s ease, color 0.3s ease;
   }
   /*header .right li div*/
-  ul li .ham-inner span:hover{
+  .ham-item-ul .ham-item .ham-inner span:hover{
     font-size: 0.8rem;
     color:#9494b8;
     cursor:pointer;
   }
-  .navbar .right ul .additional-links{
+  .navbar .right .ham-item-ul .additional-links{
     display:none;
   }
   /*----------hero-section-----------*/
