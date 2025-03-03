@@ -1003,6 +1003,15 @@ main .form-alert .form-fail-alert .fail-alert-ok-button{
   margin: 10px;
   border-radius: 5px;
 }
+/*------Sending-preloader----*/
+main .sending-preloader{
+  background-color:skyblue;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 99;
+}
 /*-----------footer----------*/
 footer{
   display:flex;
@@ -1047,9 +1056,9 @@ footer ul li:hover{
   height:100px;
   width:100px;
 }
-#plane-animation svg{
-  /* filter: hue-rotate(90deg) brightness(1.2); */
-}
+/* #plane-animation svg{
+  filter: hue-rotate(90deg) brightness(1.2);
+} */
 /* #plane-animation svg path{
   fill: transparent ; Change to any color
 } */

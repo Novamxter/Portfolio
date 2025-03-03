@@ -1,65 +1,9 @@
-import { setSkillProgress,setToolProgress} from "./P-progress.js";
-const hamButton = document.querySelector(".hamburger");
-const navUl = document.querySelector(".ham-item-ul");
-const navbar = document.querySelector("nav");
-const addLinks = document.querySelector(".additional-links");
-const checkbox = document.querySelector(".toggleCheckbox");
-const dayBackgroundMain = document.querySelector(".animateMainBg");
-const hamItem = document.querySelectorAll(".ham-item");
-setSkillProgress();
-setToolProgress()
-setReadMore();
-handleSticky();
-handleHamMenu();
-highlightActiveMenu();
-setInitialClipPath();
-setLinksTopValue();
-window.addEventListener("resize", () => {
-    setLinksTopValue();
-});
 
-checkbox.addEventListener("click", () => {
-    const rect = checkbox.getBoundingClientRect();
-    const centerX = rect.left + rect.width / 2;
-    const centerY = rect.top + rect.height / 2;
-    navbar.classList.toggle("animateNavBg");
-    //dayBackgroundNav.classList.toggle('dayBgNav')
-    if (!dayBackgroundMain.classList.contains("dayBgMain")) {
-        dayBackgroundMain.style.clipPath = `circle(200% at ${centerX}px ${centerY}px)`;
-        dayBackgroundMain.classList.add("dayBgMain");
-    } else {
-        dayBackgroundMain.style.clipPath = `circle(0% at ${centerX}px ${centerY}px)`;
-        dayBackgroundMain.classList.remove("dayBgMain");
-    }
-    document.documentElement.classList.toggle("day-theme");
-});
-
-function setInitialClipPath() {
-    const rect = checkbox.getBoundingClientRect();
-    const centerX = rect.left + rect.width / 2;
-    const centerY = rect.top + rect.height / 2;
-    dayBackgroundMain.style.clipPath = `circle(0% at ${centerX}px ${centerY}px)`;
-}
-function setReadMore() {
-    const boxes = document.querySelectorAll(".service-box");
-    boxes.forEach(box => {
-        const btn = box.querySelector(".read-more-btn");
-        const serviceBox = box.querySelector(`p`);
-        btn.addEventListener("click", () => {
-            if (
-                serviceBox.style.maxHeight === "var(--service-height)" ||
-                !serviceBox.style.maxHeight
-            ) {
-                serviceBox.style.maxHeight = serviceBox.scrollHeight + "px";
-                btn.textContent = "read less";
-                serviceBox.style.opacity = "1";
-            } else {
-                serviceBox.style.maxHeight = "var(--service-height)";
-                serviceBox.style.opacity = "0.7";
-                btn.textContent = "...read More";
-            }
-        });
-    });
+function setInitialClipPath(){
+    const rect=checkbox.getBoundingClientRect()
+    const centerX = rect.left + rect.width/2;
+    const centerY = rect.top + rect.height/2;
+    dayBackgroundMain.style.clipPath = `circles(0% at ${centerX}px ${centerY}px)`;
 }
 function setLinksTopValue() {
     const height = navUl.offsetHeight;
@@ -133,11 +77,3 @@ function highlightActiveMenu() {
         window.addEventListener("scroll", changeActiveLink);
     });
 }
-
-
-/*document.querySelectorAll('.nav-link').forEach(n=>{
-  n.addEventListener('click',()=>{
-    ham.classList.remove('active')
-    nav.classList.remove('active')
-  })
-})*/
